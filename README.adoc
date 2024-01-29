@@ -3,6 +3,18 @@
 Gradle plugin used to apply credential information defined in Maven config files to Maven repositories
 used in Gradle builds - both for upload and download
 
+== Why this fork?
+
+The original repository has been neglected by the owner and not received any updates for more than 3 years, pull requests do not recieve any feedback.
+
+This fork brings these changes over the original:
+
+* use JVM 17 in the code, the updated plugin also requires Java 17
+* all dependencies have been updated to latest version
+* for projects that do not publish any artifacts now work with this plugin without also applying the publishing plugin.
+* remove support for legacy "maven" plugin (removed with gradle 7)
+
+
 == Applying plugin
 
 See https://plugins.gradle.org/plugin/digital.fino.build.gradle-maven-auth for details on how to
