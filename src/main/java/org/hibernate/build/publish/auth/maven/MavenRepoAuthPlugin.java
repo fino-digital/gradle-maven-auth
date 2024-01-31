@@ -22,7 +22,7 @@ public class MavenRepoAuthPlugin implements Plugin<Project> {
 				new CredentialsProviderRegistry( new SettingsXmlCredentialsProvider() )
 		);
 		project.getExtensions().add( MavenRepoAuthExtension.NAME, extension );
-		doApply( project, extension.credentialsProviderRegistry() );
+		doApply( project, extension.getCredentialsProviderRegistry() );
 	}
 
 	public static void doApply(Project project, CredentialsProviderRegistry registry) {

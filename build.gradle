@@ -12,14 +12,14 @@ plugins {
 
 ext {
 	pluginId = 'digital.fino.build.gradle-maven-auth'
-	pluginVersion = '4.0.0'
+	pluginVersion = '4.1.0'
 }
 
 group = 'digital.fino.build'
 version = ext.pluginVersion
 
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
+sourceCompatibility = JavaVersion.VERSION_11
+targetCompatibility = JavaVersion.VERSION_11
 
 defaultTasks 'test'
 

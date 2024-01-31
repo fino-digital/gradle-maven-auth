@@ -11,7 +11,21 @@ import org.hibernate.build.publish.auth.CredentialsProviderRegistry;
 /**
  * @author Steve Ebersole
  */
-public record MavenRepoAuthExtension(CredentialsProviderRegistry credentialsProviderRegistry) {
+public class MavenRepoAuthExtension {
+
+	public MavenRepoAuthExtension(CredentialsProviderRegistry credentialsProviderRegistry) {
+		this.credentialsProviderRegistry = credentialsProviderRegistry;
+	}
+
 	public static final String NAME = "mavenRepoAuth";
 
+	CredentialsProviderRegistry credentialsProviderRegistry;
+
+	public CredentialsProviderRegistry getCredentialsProviderRegistry() {
+		return credentialsProviderRegistry;
+	}
+
+	public void setCredentialsProviderRegistry(CredentialsProviderRegistry credentialsProviderRegistry) {
+		this.credentialsProviderRegistry = credentialsProviderRegistry;
+	}
 }

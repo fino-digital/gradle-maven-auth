@@ -42,10 +42,10 @@ public class PublishingRepoHandler {
                     }
                     repos.forEach(
 							repo -> {
-								if (repo instanceof MavenArtifactRepository mavenRepo) {
+								if (repo instanceof MavenArtifactRepository) {
 
 									Helper.applyCredentials(
-											mavenRepo,
+											(MavenArtifactRepository) repo,
 											credentialsProviderRegistry
 									);
 								}
