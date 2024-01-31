@@ -37,7 +37,7 @@ public final class ValueProcessorRegex implements ValueProcessor {
             final String group = matcher.group(1);
             matcher.appendReplacement(s, systemPropertiesAndEnv.get(group).map(Matcher::quoteReplacement).orElse(Matcher.quoteReplacement(matcher.group())));
         }
-        if (s.isEmpty()) {
+        if (s.length() == 0) {
             return value;
         } else {
             return s.toString();
