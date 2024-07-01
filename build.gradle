@@ -33,7 +33,7 @@ dependencies {
 	implementation('org.codehaus.plexus:plexus-container-default:2.1.1')
 
 	testImplementation('uk.org.webcompere:system-stubs-jupiter:2.1.6')
-	testImplementation('org.junit.jupiter:junit-jupiter:5.10.2')
+	testImplementation('org.junit.jupiter:junit-jupiter:5.10.3')
 }
 
 gradlePlugin {
