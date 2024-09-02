@@ -3,7 +3,7 @@ plugins {
 	id 'java-gradle-plugin'
 
 	// for publishing to plugin portal
-	id 'com.gradle.plugin-publish' version '1.2.1'
+	id 'com.gradle.plugin-publish' version '1.2.2'
 
 	// for publishing snapshots
 	id 'maven-publish'
