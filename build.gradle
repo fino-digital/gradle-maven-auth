@@ -12,7 +12,7 @@ plugins {
 
 ext {
 	pluginId = 'digital.fino.build.gradle-maven-auth'
-	pluginVersion = '4.1.1'
+	pluginVersion = '4.1.2'
 }
 
 group = 'digital.fino.build'
