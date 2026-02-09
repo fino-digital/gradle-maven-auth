@@ -28,7 +28,7 @@ repositories {
 }
 
 dependencies {
-    implementation('org.dom4j:dom4j:2.1.4')
+    implementation('org.dom4j:dom4j:2.2.0')
 	implementation('org.sonatype.plexus:plexus-sec-dispatcher:1.4')
 	implementation('org.codehaus.plexus:plexus-container-default:2.1.1')
 
